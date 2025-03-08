@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+</head>
+<body>
+    <form action="https://67cb71ea3395520e6af5567c.mockapi.io/Aluno" method="post">
+        <fieldset>
+            <legend>Cadastro do Aluno</legend>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome"
+                placeholder="Nome completo" required>
+            </p>
+            <p>
+                <label for="endereco">Endereço:</label>
+                <input type="text" name="endereco" id="endereco">
+            </p>
+            <p>
+                <label for="bairro">Bairro:</label>
+                <input type="text" name="bairro" id="bairro">
+            </p>
+            <p>
+                <label for="cidade">Cidade:</label>
+                <input type="text" name="cidade" id="cidade">
+            </p>
+            <p>
+                <label for="numero">Numero:</label>
+                <input type="number" name="numero" id="numero">
+            </p>
+            <p>
+                <label for="cep">Cep:</label>
+                <input type="number" name="cep" id="cep">
+            </p>
+            <p>
+                <label for="complemento">Complemento:</label>
+                <input type="text" name="complemento" id="complemento">
+            </p>
+            <p>
+                <label for="tel">Telefone:</label>
+                <input type="tel" name="tel" id="tel">
+            </p>
+            <p>
+                <label for="cel">Celular:</label>
+                <input type="tel" name="cel" id="cel" required>
+            </p>
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+                <label for="cor">Cor:</label>
+                <select name="cor" id="cor" required>
+                    <option value="0">Selecione...</option>
+                    <option value="branca">Branca</option>
+                    <option value="preta">Preta</option>
+                    <option value="parda">Parda</option>
+                    <option value="amarela">Amarela</option>
+                    <option value="indigena">Indígena</option>
+                </select>
+            </p>
+            <p>
+                <button type="submit">Salvar</button>
+            </p>
+        </fieldset>
+    </form>
+    <form action="https://67cb71ea3395520e6af5567c.mockapi.io/pais">
+        <fieldset>
+            <legend>Dados do pai</legend>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome"
+                placeholder="Nome Completo"required>
+            </p>
+            <p>
+                <label for="dtNascimento">Data de nascimento:</label>
+                <input type="date" name="dtNascimento" id="dtNascimento">
+            </p>
+            <p>
+                <label for="naturalidade">Naturalidade:</label>
+                <input type="text" name="naturalidade" id="naturalidade">
+            </p>
+            <p>
+                <label for="profissao">Profissão:</label>
+                <input type="text" name="profissao" id="profissao">
+            </p>
+            <p>
+                <label for="cel">Celular:</label>
+                <input type="tel" name="cel" id="cel" required>
+            </p>
+            <p>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf">
+            </p>
+            <p>
+                <label for="isResponsavelFinanceiro">É o responsavel financeiro:</label>
+                <input type="radio" name="isResponsavelFinanceiro" id="isResponsavelFinanceiro">
+                    <label for="s">Sim</label>
+                <input type="radio" name="isResponsavelFinanceiro" id="isResponsavelFinanceiro">
+                    <label for="n">Não</label>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
