@@ -1,0 +1,25 @@
+.titulo {
+    background-color: burlywood;
+    font-size: 20px;
+    font-family: 'Lucida Sans';
+    color: white;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+.titulo:hover {
+    background-color: black;
+}
+body {
+    font-family: Arial;
+    padding: 50px 200px;
+    margin: 0; 
+}
+p {
+    text-indent: 20px;
+}
+#3 {
+    font-size: 20px;
+}
+#1 {
+    text-align: justify;
+}

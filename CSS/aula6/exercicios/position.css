@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.lateral {
+    height: 100%;
+    width: 20%;
+    background-color: blue;
+    float: left;
+}
+.central {
+    height: 100%;
+    width: 80%;
+    background-color: khaki;
+    float: right;
+}
+
+.central p {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    margin-bottom: 10px; 
+}
