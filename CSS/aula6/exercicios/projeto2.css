@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Menu Superior */
+.menu-superior {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    z-index: 1000;
+}
+
+/* Menu Lateral */
+.menu-lateral {
+    position: fixed;
+    left: 0;
+    top: 60px; /* Altura do menu superior */
+    bottom: 50px; /* Altura do rodapé */
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 999;
+}
+
+/* Área de Conteúdo */
+.conteudo {
+    margin-left: 200px; /* Largura do menu lateral */
+    margin-top: 60px; /* Altura do menu superior */
+    margin-bottom: 50px; /* Altura do rodapé */
+    padding: 20px;
+    min-height: calc(100vh - 110px); /* 60px top + 50px bottom */
+}
+
+/* Rodapé */
+.rodape {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    z-index: 1000;
+}
+
+/* Estilos personalizados */
+.menu-lateral ul {
+    list-style: none;
+}
+
+.menu-lateral li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-lateral a {
+    text-decoration: none;
+    color: #333;
+}
+
+.menu-lateral a:hover {
+    color: #666;
+}
+
+.conteudo h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.conteudo p {
+    line-height: 1.6;
+    color: #666;
+}
