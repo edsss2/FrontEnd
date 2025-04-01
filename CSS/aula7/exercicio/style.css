@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    border: 1px solid black;
+    display: flex;
+    width: 25%;
+    height: 60%;
+    background-color: rgb(154, 226, 198);
+    border-radius: 15px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container form {
+    width: 90%;
+    align-self: flex-start;
+    margin-left: 3%;
+}
+
+.container form input {
+    width: 100%;
+    
+}
+.btn {
+    justify-self: flex-end;
+}
