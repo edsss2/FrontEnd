@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+</head>
+<style>
+    .botao-cor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: aquamarine;
+        width: 250px;
+        height: 100px;
+    }
+    div {
+        margin-top: 20px;
+    }
+
+    .calcu {
+
+        background-color: brown;
+        width: 300px;
+        height: 100px;
+    }
+
+</style>
+<body>
+    <div class="botao-cor">
+        <button onclick="mudarCor()">Mudar a cor</button>
+    </div>
+    <div>
+        <label for="texto">Digite uma tarefa</label>
+        <input type="text" name="texto" id="texto">
+        <ul class="lista">
+            <li><strong>Lista de Tarefas</strong></li>
+        </ul>
+        <button onclick="addNaLista()">Adicionar a Lista</button>
+    </div>
+    <div class="botao-cor">
+        <p id="numero">0</p>            
+        <button onclick="aumentarNumero()">Adicionar</button>
+
+    </div>
+    <div class="calcu">
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+        <p>
+            <button onclick="somar()">Somar</button>
+            <button onclick="subtrair()">Subtrair</button>
+            <button onclick="dividir()">Dividir</button>
+            <button onclick="multiplicar()">Multiplicar</button>
+        </p>
+    </div>  
+    
+    <script src="script.js"></script>
+</body>
+</html>
