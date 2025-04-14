@@ -25,18 +25,34 @@ function aumentarNumero() {
     document.getElementById('numero').textContent = contador;
 }
 
-let num1 = document.getElementById('num1');
-let num2 = document.getElementById('num2');
-function somar() {
-    let resultado = num1 + num2;
-}
-function subtrair() {
+function calcular(operacao) {
+    let num1 = document.getElementById('num1').value;
+    let num2 = document.getElementById('num2').value;
+    let resultado = 0;
 
-}
-function dividir() {
+    if (isNaN(num1) || isNaN(num2)) {
+        document.getElementById("resultado").innerText = "Por favor, preencha os dois campos!";
+        return;
+      }
 
-}
-function multiplicar() {
+    switch(operacao) {
+        case 'somar':
+            resultado = num1 + num2;
+            break;
+        case 'subtrair':
+            resultado = num1 - num2;
+            break;
+        case 'dividir':
+            if (num2 === 0) {
+                document.getElementById("resultado").innerText = "Não é possível dividir por zero!";
+                return;
+            }
+            resultado = num1 / num2;
+            break;
+        case 'multiplicar':
+            resultado = num1 * num2;
+            break;
+    }
 
+    document.getElementById("resultado").innerText = "Resultado = " + resultado;
 }
-
