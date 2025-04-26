@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar clima</title>
+</head>
+<body>
+    <div class="quadrado">
+        <h1>Consulta de Clima</h1>
+        <input type="text" id="cidade" placeholder="Digite a cidade">
+        <button onclick="buscarClima(event)">Buscar Clima</button>
+        <p id="resultado"></p>
+    </div>
+    
+</body>
+<script>
+    let api = 'https://wttr.in/Sorocaba?format=3'
+    async function buscarClima(event) {
+        event.preventDefault()
+        let cidade = document.querySelector('#cidade')
+        let div = document.querySelector('.cidade')
+        let resultado = document.querySelector('#resultado')
+
+        let clima = 
+
+    }
+
+    async function buscarClima(cidade) {
+        let api = 'https://wttr.in/Sorocaba?format=3'
+    }
+</script>
+</html>
